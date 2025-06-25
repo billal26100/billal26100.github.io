@@ -1,0 +1,43 @@
+table {
+    border-collapse: collapse;
+    border-width:1px; 
+    border-style:solid; 
+    border-color:black;
+    
+}
+td {
+    border-width:1px;
+    border-style:solid; 
+    border-color:rgb(0, 0, 0);
+    
+    
+}
+
+.portrait {
+    width: 100px;
+}
+
+body{
+    position: relative;
+    margin: 0;
+    
+}
+
+body::before {
+    content: ""; 
+    position: fixed;         
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh; 
+    z-index: -1;
+
+
+    background-image: url(valorant-logo-big.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.2;
+}

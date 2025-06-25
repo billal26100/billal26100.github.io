@@ -1,0 +1,22 @@
+fetch("https://valorant-api.com/v1/agents")
+.then(r => r.json())  
+.then(d => { 
+  const table = document.getElementById("AgentTable");
+  d.data.forEach(a => {
+    if (!a.fullPortrait) return;
+
+    const row = document.createElement("tr");
+    row.innerHTML = 
+      '<td>' + a.displayName + '</td>' +
+      '<td><img class="portrait" src="' + a.fullPortrait + '"></td>' +
+      '<td>' + (a.description || "Pas de description") + '</td>' +
+      '<td>' +
+        a.abilities.map(cap => 
+          '<div><strong>' + cap.displayName + '</strong>: ' + 
+          (cap.description || "Aucune description") + '</div>'
+        ).join('') +
+      '</td>';
+
+    table.appendChild(row);
+  });
+});
