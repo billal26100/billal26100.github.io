@@ -5,12 +5,36 @@
 </head>
 
 <body>
-
+  
   <ul>
     <li><a href="valo.html#birox">Agent List</a></li>
     <li><a href="birox.html">Birox Profil</a></li>
   </ul>
 
-BIROX PAGE
+  BIROX PAGE
+  <marquee id="tracker">Chargement...</marquee>
+
+  <script>
+    fetch("https://raw.githubusercontent.com/billal26100/billal26100.github.io/refs/heads/main/json/birox.json",
+   
+    )
+
+
+    .then(r=>r.json())
+    .then(birox=>{
+      // Enlever l'élément chargement.
+    
+      console.log(birox);
+      console.log(birox.data.platformInfo.platformUserHandle);
+      console.log(birox.data.userInfo);
+      // Afficher les données à l'écran: nom : rank : niveau : ratio
+
+     /* let s = d.data.segments.find(x=>x.type==="overview").stats;
+      document.getElementById("tracker").textContent =
+        "Rang: "+(s.rankName?.displayValue)+"  K/D: "+(s.kd?.displayValue)+"  Wins: "+(s.wins?.displayValue);
+    */
+        });
+    
+  </script>
 </body>
 </html>
