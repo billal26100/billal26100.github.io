@@ -43,12 +43,13 @@
 
 console.log(birox.data.segments)
     const profile = document.getElementById("profil");
-    profile.innerHTML = 'Name: ' + birox.data.platformInfo.platformUserHandle;
-    profile.innerHTML +=  '   <br>'
+    profile.innerHTML =  'Name:'  + birox.data.platformInfo.platformUserHandle;
+    profile.innerHTML +=  '<br>'
      +  birox .data.metadata.accountLevel;
     profile.innerHTML +=
-    '<br>' +  birox.data.segments[1].stats.peakRating.displayValue;
-  // profile.innerHTML =  birox.data.segments[0].stats.kd.displayValue;
+    '<br>'
+      +  birox.data.segments[1].stats.peakRating.displayValue;
+
     });
 
   </script>
