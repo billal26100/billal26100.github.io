@@ -1,7 +1,7 @@
 
 body{
     color:white;
-    background-image: url(images/valorant-logo-big.jpg);
+    background-image: url(../images/valorant-logo-big.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -25,7 +25,7 @@ p{
     width: 22%;
     left: 40%;
     height: 22%;
-
+    
 }
 
 

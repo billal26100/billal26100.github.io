@@ -1,34 +1,8 @@
-html
+Ce stage de seconde est une initiation au développement web visant à : comprendre la structure d’une page HTML, appliquer des styles avec CSS et ajouter du dynamisme simple grâce à JavaScript. Les objectifs pédagogiques incluent la rédaction d’un mini-projet – par exemple un CV ou un portfolio – sur lequel les élèves coderont une page responsive, apprendront les bases des styles (couleurs, polices, flexbox), et découvriront comment manipuler le DOM pour rendre leur interface interactive . Ce parcours permet une mise en pratique progressive : d’abord apprendre à structurer une page et l’enrichir visuellement, puis utiliser JavaScript pour réagir aux actions de l’utilisateur (typiquement via un bouton, un formulaire ou un petit jeu), offrant un premier aperçu complet du cycle de développement front-end.
 
-<!DOCTYPE html>
-<html>
-<head> 
-    <link rel="stylesheet" href="style.css"></head>
-    <body>  
-        <div left:150px class="content" >
-            <ul>
-                <li class="column">Agents</li>
-                <li class="column">Map</li>
-                <li class="column">Armes</li>
-                
-            </ul>
-        </div>        
-    </body>
-</head>
-</html>   
 
-css
 
-body{
-    color:white;
-background-image: url(images/valorant-logo-big.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-background-attachment: fixed;
-    background-color: black;
-}
 
-#agents {
-    margin-top:1000px;
-}
+
+
+
